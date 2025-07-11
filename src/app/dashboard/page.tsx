@@ -1,7 +1,8 @@
 // app/dashboard/page.tsx
+"use client";
 import { currentUser } from "@clerk/nextjs/server";
 
-export default async function Dashboard() {
+export async function Dashboard() {
   const user = await currentUser();
 
   return (
